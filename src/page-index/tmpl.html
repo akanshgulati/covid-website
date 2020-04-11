@@ -14,8 +14,8 @@
         </div>
         <div class="col-sm-12 col-md-9">
           <div class="nav-buttons hide-xs show-lg">
-            <button>Add To Chrome</button>
-            <button>Add To Firefox</button>
+            <button onclick="chromeOpen()">Add To Chrome</button>
+            <button onclick="firefoxOpen()">Add To Firefox</button>
           </div>
         </div>
       </div>
@@ -30,14 +30,14 @@
             <div class="heading bold center-xs start-lg">COVID-19 Tracker</div>
             <div class="sub-heading center-xs start-lg">Get latest statistics of local and global coronavirus cases.
             </div>
-            <div class="download-cta center-xs row start-lg between-xs">
-              <button class="download row middle-xs">
+            <div class="download-cta center-xs row start-lg middle-xs">
+              <button class="download row middle-xs" onclick="chromeOpen()">
                 <img src="images/chrome-icon.png" alt="chrome icon" width="32">
                 <span>Add To Chrome</span>
               </button>
-              <button class="download row middle-xs">
+              <button class="download row middle-xs" onclick="firefoxOpen()">
                 <img src="images/firefox-icon.png" alt="firefox icon" width="32">
-                <span>Add To Firfox</span>
+                <span>Add To Firefox</span>
               </button>
             </div>
           </div>
@@ -128,14 +128,14 @@
       </div>
       <span class="center-xs row download-line">Download COVID-19 tracker</span>
       <div class="download-cta center-xs row">
-        <button class="row middle-xs download">
+        <a class="row middle-xs download" href="https://chrome.google.com/webstore/detail/covid-19-tracker/ehpkefnpbbmohfkanokkjklihkjbamjm">
           <img src="images/chrome-white-icon.png" alt="chrome icon">
           <span>Add to Chrome</span>
-        </button>
-        <button class="row middle-xs download">
+        </a>
+        <a class="row middle-xs download" href="https://addons.mozilla.org/en-US/firefox/addon/covid-19-tracker">
           <img src="images/firefox-white-icon.png" alt="chrome icon">
           <span>Add to Firefox</span>
-        </button>
+        </a>
       </div>
     </div>
   </section>

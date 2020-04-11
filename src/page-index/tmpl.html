@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Covid-19 Tracker |</title>
+  <%= require('html-loader!../partials/meta.html') %>
+</head>
+<body>
+<div class="container">
+  <section class="">
+    <nav style="height: 40vh;">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="logo"><span>COVID-19</span> <br>Tracker</div>
+        </div>
+        <div class="col-sm-12 col-md-9">
+          <div class="nav-buttons hide-xs show-lg">
+            <button>Add To Chrome</button>
+            <button>Add To Firefox</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="hero-image">
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 center-xs hide-lg">
+          <img src="images/logo.png" alt="" class="heading-logo">
+        </div>
+        <div class="col-lg-6 col-xs-12">
+          <div class="heading-container">
+            <div class="heading bold center-xs start-lg">COVID-19 Tracker</div>
+            <div class="sub-heading center-xs start-lg">Get latest statistics of local and global coronavirus cases.
+            </div>
+            <div class="download-cta center-xs row start-lg between-xs">
+              <button class="download row middle-xs">
+                <img src="images/chrome-icon.png" alt="chrome icon" width="32">
+                <span>Add To Chrome</span>
+              </button>
+              <button class="download row middle-xs">
+                <img src="images/firefox-icon.png" alt="firefox icon" width="32">
+                <span>Add To Firfox</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 center-xs hide-xs show-lg">
+          <img src="images/logo.png" alt="" class="heading-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stat-screen section">
+    <div class="row middle-xs">
+      <div class="col-xs-12 col-lg-6 show-xs hide-lg center-xs">
+        <div class="section-heading">
+          Track cases all <br/>over the globe
+        </div>
+        <div class="section-sub-heading">
+          See count of active, recovered and deceased people
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-6 center-xs start-lg">
+        <picture>
+          <source media="(min-width: 75em)" srcset="images/covid-stat-screen@3x.png">
+          <source media="(min-width: 64em)" srcset="images/covid-stat-screen@2x.png">
+          <img src="images/covid-stat-screen.png" alt="Stat Screen" style="width:auto;">
+        </picture>
+      </div>
+      <div class="col-xs-12 col-lg-6 show-lg hide-xs center-xs start-lg">
+        <div class="section-heading">
+          Track cases all <br/>over the globe
+        </div>
+        <div class="section-sub-heading">
+          See count of active, recovered and deceased people
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="region-section section">
+    <div class="row middle-xs">
+      <div class="col-xs-12 col-lg-6 center-xs start-lg">
+        <div class="section-heading">
+          Add any number of regions
+        </div>
+        <div class="section-sub-heading">
+          See stats for all countries or state-wise data for India & US
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-6 center-xs start-lg">
+        <picture>
+          <source media="(min-width: 75em)" srcset="images/covid-region-screen@3x.png">
+          <source media="(min-width: 64em)" srcset="images/covid-region-screen@2x.png">
+          <img src="images/covid-region-screen.png" alt="Region Screen" style="width:auto;">
+        </picture>
+      </div>
+    </div>
+  </section>
+  <section class="notification-screen section">
+    <div class="row middle-xs">
+      <div class="col-xs-12 col-lg-6 show-xs hide-lg center-xs">
+        <div class="section-heading">
+          Get notification of increase in global cases
+        </div>
+        <div class="section-sub-heading">
+          See a notification as soon as there is a change in global cases
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <picture>
+          <source media="(min-width: 75em)" srcset="images/covid-notification@3x.png">
+          <source media="(min-width: 64em)" srcset="images/covid-notification@2x.png">
+          <img src="images/covid-notification.png" alt="Stat Screen" style="width:auto;">
+        </picture>
+      </div>
+      <div class="col-xs-12 col-lg-5 col-lg-offset-1 show-lg hide-xs">
+        <div class="section-heading">
+          Get notification of increase in global cases
+        </div>
+        <div class="section-sub-heading">
+          See a notification as soon as there is a change in global cases
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="safety-banner section">
+    <div class="safety-banner-bg">
+      <div class="safety-heading center-xs middle-lg">
+        Stay home. Stay safe. Save lives.
+      </div>
+      <span class="center-xs row download-line">Download COVID-19 tracker</span>
+      <div class="download-cta center-xs row">
+        <button class="row middle-xs download">
+          <img src="images/chrome-white-icon.png" alt="chrome icon">
+          <span>Add to Chrome</span>
+        </button>
+        <button class="row middle-xs download">
+          <img src="images/firefox-white-icon.png" alt="chrome icon">
+          <span>Add to Firefox</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <div class="footer-links">
+        <a href="/support.html">Help & Support</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

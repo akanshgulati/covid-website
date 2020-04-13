@@ -2,6 +2,7 @@
   html {
     font-size: 12px;
   }
+
   .container {
     padding: 0;
   }
@@ -37,12 +38,28 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .safety-banner .download {
     margin-top: 10px;
   }
 
+  #hero-image {
+    padding: 30px 0;
+  }
+
   #hero-image .download {
     margin-top: 10px;
+  }
+
+  #hero-image .extension-bg {
+    width: 130%;
+    margin: 30px 0;
+  }
+
+  header .logo-bg {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
   }
 }
 
@@ -50,6 +67,7 @@
   html {
     font-size: 14px;
   }
+
   .hide-md {
     display: none;
   }
@@ -71,6 +89,7 @@
   html {
     font-size: 16px;
   }
+
   .hide-lg {
     display: none;
   }
@@ -98,5 +117,15 @@
 
   .section-sub-heading {
     margin-bottom: 0;
+  }
+
+  #hero-image .extension-bg {
+    width: 90%;
+    margin: 20px 0;
+  }
+  header .logo-bg {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
   }
 }

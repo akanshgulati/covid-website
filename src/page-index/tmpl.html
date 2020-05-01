@@ -6,26 +6,28 @@
 </head>
 <body>
 <div >
-  <section class="">
-    <header style="height: 150px;">
-      <div class="row middle-xs" style="height: 100%">
-        <div class="col-xs-12 col-lg-3 row center-xs start-lg left-lg">
-          <div class="logo row middle-xs">
-            <div class="logo-bg"></div>
-            <div class="heading-text">
-              <span>COVID-19</span>
-              <br>Tracker
+  <section class="home">
+    <div class="header">
+      <header>
+        <div class="row middle-xs" style="height: 100%">
+          <div class="col-xs-12 col-lg-3 row center-xs start-lg left-lg">
+            <div class="logo row middle-xs">
+              <div class="logo-bg"></div>
+              <div class="heading-text">
+                <span>COVID-19</span>
+                <br>Tracker
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-9">
-          <div class="nav-buttons hide-xs show-lg">
-            <button onclick="chromeOpen()">Add To Chrome</button>
-            <button onclick="firefoxOpen()">Add To Firefox</button>
+          <div class="col-sm-12 col-md-9">
+            <div class="nav-buttons hide-xs show-lg">
+              <button onclick="chromeOpen()" class="bold">Add To Chrome</button>
+              <button onclick="firefoxOpen()" class="bold">Add To Firefox</button>
+            </div>
           </div>
-        </div>
-      </div stye>
-    </header>
+        </div stye>
+      </header>
+    </div>
     <div id="hero-image">
       <div class="row middle-xs full-height">
         <div class="col-lg-8 col-xs-12 row center-lg end-xs">
@@ -78,14 +80,33 @@
       </div>
     </div>
   </section>
-  <section class="region-section section">
+  <section class="graphical-stat-screen section">
     <div class="row middle-xs">
-      <div class="col-xs-12 col-lg-6 center-xs start-lg">
+      <div class="col-xs-12 col-lg-5 col-lg-offset-1 center-xs start-lg">
         <div class="section-heading">
-          Add any number of regions
+          Compare stats graphically
         </div>
         <div class="section-sub-heading">
-          See stats for all countries or state-wise data for India & US
+         Check and compare historical stats of various regions in single chart view.
+        </div>
+      </div>
+      <div class="col-xs-12 col-lg-6">
+        <picture>
+          <source media="(min-width: 75em)" srcset="images/covid-graphical-screen@3x.png">
+          <source media="(min-width: 64em)" srcset="images/covid-graphical-screen@2x.png">
+          <img src="images/covid-graphical-screen.png" alt="Stat Screen" style="width:auto;">
+        </picture>
+      </div>
+    </div>
+  </section>
+  <section class="region-section section">
+    <div class="row middle-xs">
+      <div class="col-xs-12 col-lg-6 show-xs hide-lg center-xs">
+        <div class="section-heading">
+          Add multiple regions
+        </div>
+        <div class="section-sub-heading">
+          See stats for various countries and states in a single view.
         </div>
       </div>
       <div class="col-xs-12 col-lg-6 center-xs start-lg">
@@ -95,16 +116,24 @@
           <img src="images/covid-region-screen.png" alt="Region Screen" style="width:auto;">
         </picture>
       </div>
+      <div class="col-xs-12 col-lg-6 center-xs start-lg show-lg hide-xs">
+        <div class="section-heading">
+          Add multiple regions
+        </div>
+        <div class="section-sub-heading">
+          See stats for various countries and states in a single view.
+        </div>
+      </div>
     </div>
   </section>
   <section class="notification-screen section">
     <div class="row middle-xs">
-      <div class="col-xs-12 col-lg-6 show-xs hide-lg center-xs">
+      <div class="col-xs-12 col-lg-6 center-xs start-lg">
         <div class="section-heading">
-          Get notification of increase in global cases
+          Get badge notifications
         </div>
         <div class="section-sub-heading">
-          See a notification as soon as there is a change in global cases
+          Get increase in global count cases notifications in menu bar.
         </div>
       </div>
       <div class="col-xs-12 col-lg-6">
@@ -114,14 +143,14 @@
           <img src="images/covid-notification.png" alt="Stat Screen" style="width:auto;">
         </picture>
       </div>
-      <div class="col-xs-12 col-lg-5 col-lg-offset-1 show-lg hide-xs">
-        <div class="section-heading">
-          Get notification of increase in global cases
-        </div>
-        <div class="section-sub-heading">
-          See a notification as soon as there is a change in global cases
-        </div>
-      </div>
+<!--      <div class="col-xs-12 col-lg-5 col-lg-offset-1 show-lg hide-xs">-->
+<!--        <div class="section-heading">-->
+<!--          Get notification of increase in global cases-->
+<!--        </div>-->
+<!--        <div class="section-sub-heading">-->
+<!--          See a notification as soon as there is a change in global cases-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </section>
   <section class="safety-banner section">
@@ -152,6 +181,18 @@
       </div>
     </div>
   </footer>
+  <section class="hide-xs hide-md hide-lg fixed-download-footer" id="download-footer">
+    <div class="download-cta">
+      <button class="download row middle-xs" onclick="chromeOpen()">
+        <img src="images/chrome-icon.png" alt="chrome icon" width="32">
+        <span>Add To Chrome</span>
+      </button>
+      <button class="download row middle-xs" style="margin-left: 15px;" onclick="firefoxOpen()">
+        <img src="images/firefox-icon.png" alt="firefox icon" width="32">
+        <span>Add To Firefox</span>
+      </button>
+    </div>
+  </section>
 </div>
 </body>
 </html>

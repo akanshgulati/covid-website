@@ -40,6 +40,8 @@ button:hover {
   padding: 12px 20px;
   background: none;
   margin-left: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 .full-height {
@@ -221,8 +223,62 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
 .footer-links .separator {
   margin: 0 4px;
   color: #666666;
   font-size: 0.8em;
+}
+
+.fade-in {
+  animation: fadeIn ease 20s;
+  -webkit-animation: fadeIn ease 20s;
+  -moz-animation: fadeIn ease 20s;
+  -o-animation: fadeIn ease 20s;
+  -ms-animation: fadeIn ease 20s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
